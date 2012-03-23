@@ -1,4 +1,4 @@
-ALTER TABLE public.planet_osm_polygon ADD COLUMN "id" INTEGER;
+ALTER TABLE public.planet_osm_polygon ADD COLUMN "id" int4;
 CREATE SEQUENCE public.polygon_id_seq;
 UPDATE planet_osm_polygon SET id = nextval('"public"."polygon_id_seq"');
 UPDATE planet_osm_polygon SET id = nextval('"public"."polygon_id_seq"');
